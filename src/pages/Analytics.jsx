@@ -124,8 +124,8 @@ const Analytics = () => {
     api
       .get(`/simulation/sessions/${selectedId}`)
       .then((res) => {
-        console.log('Analytics data:', res.data.data);
-        console.log('Comparison data:', res?.data?.data);
+        // console.log('Analytics data:', res.data.data);
+        // console.log('Comparison data:', res?.data?.data);
         setData(res.data.data);
       })
       .finally(() => setLoading(false));
